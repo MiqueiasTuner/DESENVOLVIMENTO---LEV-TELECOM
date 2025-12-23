@@ -3,39 +3,44 @@ import { Wifi, ShieldCheck, Zap, Headphones, Globe, Smartphone } from 'lucide-re
 export const PLANS = [
   {
     name: 'Plano Start',
-    speed: '200',
-    unit: 'MEGA',
-    price: '99',
+    speed: '550',
+    unit: 'MEGAS',
+    price: '85',
+    cents: '00',
     features: [
-      'Wi-Fi Turbo',
-      'Suporte 24x7',
-      'Instalação Grátis'
+      'Wi-Fi',
+      'Instalação Rápida',
+      'Suporte Técnico',
+      'Sem Fidelidade'
     ],
     highlight: false,
   },
   {
-    name: 'Plano Power',
-    speed: '400',
-    unit: 'MEGA',
-    price: '139',
+    name: 'Plano Turbo',
+    speed: '800',
+    unit: 'MEGAS',
+    price: '95',
+    cents: '00',
     features: [
-      'Wi-Fi 6 Turbo',
-      'Sem franquia de consumo',
-      'Suporte Prioritário 24x7',
-      'App de Filmes Grátis'
+      'Wi-Fi',
+      'Instalação Rápida',
+      'Suporte Técnico',
+      'Sem Fidelidade'
     ],
     highlight: true,
     tag: 'Mais Vendido'
   },
   {
-    name: 'Plano Ultra',
-    speed: '600',
-    unit: 'MEGA',
-    price: '189',
+    name: 'Plano Fiber Max',
+    speed: '01',
+    unit: 'GIGA',
+    price: '110',
+    cents: '90',
     features: [
-      'Wi-Fi Mesh Incluso',
-      'Atendimento Prioritário',
-      'Sem franquia de consumo'
+      'Wi-Fi Mesh Adicional Grátis',
+      'Instalação Rápida',
+      'Suporte Técnico',
+      'Sem Fidelidade'
     ],
     highlight: false,
   },
