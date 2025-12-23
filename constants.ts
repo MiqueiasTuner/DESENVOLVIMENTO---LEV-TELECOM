@@ -1,48 +1,53 @@
 import { Wifi, ShieldCheck, Zap, Headphones, Globe, Smartphone } from 'lucide-react';
 
+export const WHATSAPP_LINK = "https://wa.me/5508005380000";
+export const CONTACT_EMAIL = "contato@internetlev.com.br";
+export const PHONE_NUMBER = "0800 538 0000";
+
 export const PLANS = [
   {
-    name: 'Plano Start',
-    speed: '550',
-    unit: 'MEGAS',
-    price: '85',
-    cents: '00',
-    features: [
-      'Wi-Fi',
-      'Instalação Rápida',
-      'Suporte Técnico',
-      'Sem Fidelidade'
-    ],
-    highlight: false,
-  },
-  {
-    name: 'Plano Turbo',
+    name: 'PLANO TURBO',
     speed: '800',
     unit: 'MEGAS',
     price: '95',
     cents: '00',
     features: [
-      'Wi-Fi',
+      'Wi-Fi Incluso',
       'Instalação Rápida',
-      'Suporte Técnico',
-      'Sem Fidelidade'
+      'Suporte Técnico'
     ],
-    highlight: true,
-    tag: 'Mais Vendido'
+    highlight: false,
+    color: 'bg-[#43a0b1]' // Teal color from image
   },
   {
-    name: 'Plano Fiber Max',
+    name: 'PLANO START',
+    speed: '550',
+    unit: 'MEGAS',
+    price: '85',
+    cents: '00',
+    features: [
+      'Wi-Fi Incluso',
+      'Instalação Rápida',
+      'Suporte Técnico'
+    ],
+    highlight: true,
+    tag: 'Mais Popular',
+    color: 'bg-[#43a0b1]'
+  },
+  {
+    name: 'PLANO FIBER MAX',
     speed: '01',
     unit: 'GIGA',
     price: '110',
     cents: '90',
+    extra: 'Wifi-Mesh Adicional Gratis',
     features: [
-      'Wi-Fi Mesh Adicional Grátis',
+      'Wi-Fi Mesh Incluso',
       'Instalação Rápida',
-      'Suporte Técnico',
-      'Sem Fidelidade'
+      'Suporte Técnico'
     ],
     highlight: false,
+    color: 'bg-[#43a0b1]'
   },
 ];
 

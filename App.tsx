@@ -5,6 +5,7 @@ import { Features } from './components/Features';
 import { Plans } from './components/Plans';
 import { Solutions } from './components/Solutions';
 import { Footer } from './components/Footer';
+import { WHATSAPP_LINK } from './constants';
 
 function App() {
   return (
@@ -21,9 +22,11 @@ function App() {
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Contrate agora mesmo e tenha instalação gratuita em até 24 horas.
             </p>
-            <button className="bg-white text-brand-orange px-8 py-3.5 rounded-full font-bold text-lg shadow-lg hover:bg-gray-100 transition-colors">
-              Contratar Agora
-            </button>
+            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+              <button className="bg-white text-brand-orange px-12 py-4 rounded-full font-black text-xl shadow-lg hover:scale-105 transition-all uppercase tracking-widest">
+                Contratar Agora
+              </button>
+            </a>
           </div>
         </section>
       </main>
