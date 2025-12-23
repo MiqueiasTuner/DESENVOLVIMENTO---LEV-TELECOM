@@ -73,16 +73,16 @@ export const SOLUTIONS = [
   {
     title: 'Internet Fibra',
     description: 'Navegue, assista e trabalhe com a máxima performance! A fibra óptica da Lev Telecom garante ultra velocidade, estabilidade e franquia ilimitada.',
-    image: 'https://images.unsplash.com/photo-1520697517388-12f367e525c3?auto=format&fit=crop&q=80&w=800'
+    image: 'https://telesintese.com.br/wp-content/uploads/2023/11/fibra-optica-telecom-conexao-infraestrutura-freepik.jpg'
   },
   {
-    title: 'Wi-Fi 5G',
+    title: 'Wi-Fi',
     description: 'Conectividade sem fios de última geração para sua casa inteligente, games e streaming 4K sem travamentos.',
-    image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=800'
+    image: 'https://www.desktop.com.br/blog/wp-content/webp-express/webp-images/uploads/2025/09/o-que-e-e-como-o-wifi-e-gerado.jpg.webp'
   },
   {
-    title: 'Voz Digital',
+    title: 'Telefonia Fixa',
     description: 'Planos de voz digital com clareza cristalina para falar com quem você ama ou fechar grandes negócios.',
-    image: 'https://images.unsplash.com/photo-1587578726258-2919a5539c97?auto=format&fit=crop&q=80&w=800'
+    image: 'https://mobilit.com.br/wp-content/uploads/2021/08/telefonia-fixa.jpg'
   }
 ];

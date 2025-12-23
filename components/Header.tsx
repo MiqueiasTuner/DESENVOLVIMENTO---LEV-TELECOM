@@ -49,6 +49,8 @@ export const Header = () => {
     { name: 'Contato', href: '#contato' },
   ];
 
+  const clientAreaUrl = "https://portal.internetlev.com.br/auth/login";
+
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -92,10 +94,12 @@ export const Header = () => {
               {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
             </button>
 
-            <Button variant="outline" size="sm" className="ml-2 gap-2">
-              <User size={18} />
-              Área do Cliente
-            </Button>
+            <a href={clientAreaUrl} target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="sm" className="ml-2 gap-2">
+                <User size={18} />
+                Área do Cliente
+              </Button>
+            </a>
             
             <Button variant="primary" size="sm">
               Assine Já
@@ -138,9 +142,11 @@ export const Header = () => {
               </a>
             ))}
             <div className="pt-4 flex flex-col gap-3 w-full max-w-xs">
-              <Button variant="outline" className="w-full justify-center gap-2">
-                 <User size={18} /> Área do Cliente
-              </Button>
+              <a href={clientAreaUrl} target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button variant="outline" className="w-full justify-center gap-2">
+                   <User size={18} /> Área do Cliente
+                </Button>
+              </a>
               <Button variant="primary" className="w-full justify-center">
                 Assine Já
               </Button>

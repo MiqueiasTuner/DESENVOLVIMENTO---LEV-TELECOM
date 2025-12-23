@@ -3,6 +3,10 @@ import { Logo } from './Logo';
 import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from 'lucide-react';
 
 export const Footer = () => {
+  const clientAreaUrl = "https://portal.internetlev.com.br/auth/login";
+  const developerUrl = "https://www.instagram.com/miqueias_dev/";
+  const developerLogo = "https://i.postimg.cc/VLMZYtxk/perfillllllll.jpg";
+
   return (
     <footer id="contato" className="bg-white dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 pt-16 pb-8 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +38,7 @@ export const Footer = () => {
               <li><a href="#solucoes" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Para Empresas</a></li>
               <li><a href="#sobre" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Sobre Nós</a></li>
               <li><a href="#" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Teste de Velocidade</a></li>
-              <li><a href="#" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Área do Cliente</a></li>
+              <li><a href={clientAreaUrl} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange dark:hover:text-brand-orange transition-colors">Área do Cliente</a></li>
             </ul>
           </div>
 
@@ -68,10 +72,26 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-gray-100 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400">
-          <p>Todos os direitos reservados 2025 - sintese marketing</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-gray-900 dark:hover:text-white">Privacidade</a>
-            <a href="#" className="hover:text-gray-900 dark:hover:text-white">Termos de Uso</a>
+          <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0">
+            <p>© 2025 Lev Internet. Todos os direitos reservados.</p>
+            <div className="hidden md:block w-px h-4 bg-gray-300 dark:bg-gray-700"></div>
+            <a 
+              href={developerUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="group flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-50 dark:bg-gray-900 hover:bg-brand-orange/10 transition-all border border-transparent hover:border-brand-orange/20"
+            >
+              <img 
+                src={developerLogo} 
+                alt="miqueias Dev" 
+                className="w-6 h-6 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all border border-gray-200 dark:border-gray-700" 
+              />
+              <span className="font-medium group-hover:text-brand-orange transition-colors">Desenvolvido por miqueias Dev</span>
+            </a>
+          </div>
+          <div className="flex space-x-6">
+            <a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Privacidade</a>
+            <a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Termos de Uso</a>
           </div>
         </div>
       </div>
