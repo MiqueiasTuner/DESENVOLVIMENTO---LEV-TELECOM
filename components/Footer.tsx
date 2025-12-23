@@ -1,12 +1,10 @@
 import React from 'react';
 import { Logo } from './Logo';
 import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from 'lucide-react';
-import { WHATSAPP_LINK, CONTACT_EMAIL, PHONE_NUMBER } from '../constants';
+import { WHATSAPP_LINK, CONTACT_EMAIL, PHONE_NUMBER, INSTAGRAM_LEV, DEVELOPER_INSTA, DEVELOPER_LOGO } from '../constants';
 
 export const Footer = () => {
   const clientAreaUrl = "https://portal.internetlev.com.br/auth/login";
-  const developerUrl = "https://www.instagram.com/miqueias_dev/";
-  const developerLogo = "https://i.postimg.cc/VLMZYtxk/perfillllllll.jpg";
 
   return (
     <footer id="contato" className="bg-white dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 pt-16 pb-8 transition-colors duration-300">
@@ -20,24 +18,27 @@ export const Footer = () => {
               Levando a melhor conexão de internet fibra óptica para sua casa ou empresa. Velocidade, estabilidade e suporte que você pode confiar.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/internetlev/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-brand-orange hover:text-white transition-colors">
+              <a href={INSTAGRAM_LEV} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-brand-orange hover:text-white transition-colors">
+                <span className="sr-only">Instagram Lev</span>
                 <Instagram size={20} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-brand-orange hover:text-white transition-colors">
+                <span className="sr-only">Facebook Lev</span>
                 <Facebook size={20} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-brand-orange hover:text-white transition-colors">
+                <span className="sr-only">Twitter Lev</span>
                 <Twitter size={20} />
               </a>
             </div>
           </div>
 
           <div>
-            <h4 className="font-bold text-gray-900 dark:text-white mb-6 text-lg">Links Rápidos</h4>
+            <h4 className="font-bold text-gray-900 dark:text-white mb-6 text-lg">Navegação</h4>
             <ul className="space-y-3">
-              <li><a href="#planos" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Planos Residenciais</a></li>
-              <li><a href="#solucoes" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Para Empresas</a></li>
-              <li><a href="#sobre" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Sobre Nós</a></li>
+              <li><a href="#planos" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Ver Planos</a></li>
+              <li><a href="#solucoes" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Nossas Soluções</a></li>
+              <li><a href="#sobre" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Sobre a Lev</a></li>
               <li><a href={clientAreaUrl} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Área do Cliente</a></li>
             </ul>
           </div>
@@ -45,22 +46,22 @@ export const Footer = () => {
           <div>
             <h4 className="font-bold text-gray-900 dark:text-white mb-6 text-lg">Suporte</h4>
             <ul className="space-y-3">
-              <li><a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Falar no WhatsApp</a></li>
+              <li><a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors font-semibold">WhatsApp Oficial</a></li>
               <li><a href={clientAreaUrl} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Segunda via de Boleto</a></li>
-              <li><a href="#" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Autoatendimento</a></li>
+              <li><a href="#" className="text-gray-600 dark:text-gray-400 hover:text-brand-orange transition-colors">Dúvidas Frequentes</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-bold text-gray-900 dark:text-white mb-6 text-lg">Contato</h4>
+            <h4 className="font-bold text-gray-900 dark:text-white mb-6 text-lg">Fale Conosco</h4>
             <ul className="space-y-4">
               <li className="flex items-start text-gray-600 dark:text-gray-400">
                 <Phone size={20} className="text-brand-orange mr-3 mt-0.5 flex-shrink-0" />
-                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">{PHONE_NUMBER}</a>
+                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors font-medium">{PHONE_NUMBER}</a>
               </li>
               <li className="flex items-start text-gray-600 dark:text-gray-400">
                 <Mail size={20} className="text-brand-orange mr-3 mt-0.5 flex-shrink-0" />
-                <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-brand-orange transition-colors">{CONTACT_EMAIL}</a>
+                <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-brand-orange transition-colors break-all">{CONTACT_EMAIL}</a>
               </li>
               <li className="flex items-start text-gray-600 dark:text-gray-400">
                 <MapPin size={20} className="text-brand-orange mr-3 mt-0.5 flex-shrink-0" />
@@ -75,14 +76,14 @@ export const Footer = () => {
             <p>© 2025 Lev Internet. Todos os direitos reservados.</p>
             <div className="hidden md:block w-px h-4 bg-gray-300 dark:bg-gray-700"></div>
             <a 
-              href={developerUrl} 
+              href={DEVELOPER_INSTA} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="group flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-50 dark:bg-gray-900 hover:bg-brand-orange/10 transition-all border border-transparent hover:border-brand-orange/20"
             >
               <img 
-                src={developerLogo} 
-                alt="miqueias Dev" 
+                src={DEVELOPER_LOGO} 
+                alt="miqueias Dev Logo" 
                 className="w-6 h-6 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all border border-gray-200 dark:border-gray-700" 
               />
               <span className="font-medium group-hover:text-brand-orange transition-colors">Desenvolvido por miqueias Dev</span>
@@ -90,7 +91,7 @@ export const Footer = () => {
           </div>
           <div className="flex space-x-6">
             <a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Privacidade</a>
-            <a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Termos de Uso</a>
+            <a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Termos</a>
           </div>
         </div>
       </div>

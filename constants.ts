@@ -1,8 +1,11 @@
-import { Wifi, ShieldCheck, Zap, Headphones, Globe, Smartphone } from 'lucide-react';
+import { Wifi, ShieldCheck, Zap, Headphones } from 'lucide-react';
 
 export const WHATSAPP_LINK = "https://wa.me/5508005380000";
 export const CONTACT_EMAIL = "contato@internetlev.com.br";
 export const PHONE_NUMBER = "0800 538 0000";
+export const INSTAGRAM_LEV = "https://www.instagram.com/internetlev/";
+export const DEVELOPER_INSTA = "https://www.instagram.com/miqueias_dev/";
+export const DEVELOPER_LOGO = "https://i.postimg.cc/VLMZYtxk/perfillllllll.jpg";
 
 export const PLANS = [
   {
@@ -17,7 +20,7 @@ export const PLANS = [
       'Suporte Técnico'
     ],
     highlight: false,
-    color: 'bg-[#43a0b1]' // Teal color from image
+    color: 'bg-[#43a0b1]'
   },
   {
     name: 'PLANO START',
